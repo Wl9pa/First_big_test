@@ -1,5 +1,6 @@
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import NoAlertPresentException
 
 
 class BasePage:
@@ -17,3 +18,7 @@ class BasePage:
         except NoSuchElementException:
             return False
         return True
+
+    def get_text(self, how, what):
+        element = self.browser.find_element(how, what)
+        return element.text
