@@ -18,3 +18,12 @@ class ProductPageLocators:
     SUCCESS_MESSAGE = (By.CSS_SELECTOR, ".alert-success")
 
 
+class BasePageLocators:
+    LOGIN_LINK = (By.CSS_SELECTOR, "#login_link")
+    LOGIN_LINK_INVALID = (By.CSS_SELECTOR, "#login_link_inc")
+
+
+class BasketPageLocators:
+    BASKET_LINK = (By.CSS_SELECTOR, '.btn-group > .btn.btn-default')
+    BASKET_FORM = (By.CSS_SELECTOR, "#basket_formset")
+    BASKET_EMPTY_MESSAGE = (By.CSS_SELECTOR, "#content_inner > p")
