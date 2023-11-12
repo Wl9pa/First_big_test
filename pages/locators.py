@@ -32,4 +32,3 @@ class BasketPageLocators:
     BASKET_LINK = (By.CSS_SELECTOR, '.btn-group > .btn.btn-default')
     BASKET_FORM = (By.CSS_SELECTOR, "#basket_formset")
     BASKET_EMPTY_MESSAGE = (By.CSS_SELECTOR, "#content_inner > p")
-
